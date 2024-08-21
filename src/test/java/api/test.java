@@ -24,11 +24,11 @@ import java.util.Map;
 public class test {
     @Test
     public void testToken() {
-        String endPoint = "https://backend.cashwise.us/api/myaccount/auth/login";
-        RequestBody requesBody = new RequestBody();
-        requesBody.setEmail("olesmakarenko@gmail.com");
-        requesBody.setPassword("12345678");
-        Response response = RestAssured.given().contentType(ContentType.JSON).body(requesBody).post(endPoint);
+        String endPoint = "https://backend.supplysync.us/api/v1/public/login";
+        RequestBody requestBody = new RequestBody();
+        requestBody.setEmail("admin@codewise.com");
+        requestBody.setPassword("codewise123");
+        Response response = RestAssured.given().contentType(ContentType.JSON).body(requestBody).post(endPoint);
         int statusCode = response.statusCode();
         Assert.assertEquals(200, statusCode);
         response.prettyPrint();
