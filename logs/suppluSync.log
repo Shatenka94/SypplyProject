@@ -1,0 +1,57 @@
+21:26:08 [main] INFO  step_definitions.SearchBarSteps - User is going to https://www.google.com
+21:26:13 [main] INFO  step_definitions.SearchBarSteps - User successfully landed on page Google
+21:26:13 [main] INFO  step_definitions.SearchBarSteps - User entered apple in input field
+14:06:57 [main] INFO  step_definitions.SearchBarSteps - User is going to https://www.google.com
+14:06:58 [main] INFO  step_definitions.SearchBarSteps - User successfully landed on page Google
+14:06:58 [main] INFO  step_definitions.SearchBarSteps - User entered apple in input field
+18:12:14 [main] INFO  step_definitions.SearchBarSteps - User is going to https://www.google.com
+18:12:15 [main] INFO  step_definitions.SearchBarSteps - User successfully landed on page Google
+18:12:37 [main] INFO  step_definitions.SearchBarSteps - User is going to https://www.google.com
+18:12:39 [main] INFO  step_definitions.SearchBarSteps - User successfully landed on page Google
+15:50:49 [main] INFO  step_definitions.SearchBarSteps - User is going to https://www.google.com
+15:50:50 [main] INFO  step_definitions.SearchBarSteps - User successfully landed on page Google
+15:50:50 [main] INFO  step_definitions.SearchBarSteps - User entered apple in input field
+16:25:47 [main] INFO  step_definitions.CompaniesSteps - Navigating to https://supplysync.us/
+16:25:49 [main] INFO  step_definitions.CompaniesSteps - Logging in with valid credentials.
+16:25:49 [main] INFO  step_definitions.CompaniesSteps - Navigating to the Companies page.
+16:27:01 [main] INFO  step_definitions.CompaniesSteps - Navigating to https://supplysync.us/
+16:27:02 [main] INFO  step_definitions.CompaniesSteps - Logging in with valid credentials.
+16:27:02 [main] INFO  step_definitions.CompaniesSteps - Navigating to the Companies page.
+16:33:15 [main] INFO  step_definitions.CompaniesSteps - Navigating to https://supplysync.us/
+16:33:17 [main] INFO  step_definitions.CompaniesSteps - Logging in with valid credentials.
+16:33:17 [main] INFO  step_definitions.CompaniesSteps - Navigating to the Companies page.
+16:34:07 [main] INFO  step_definitions.CompaniesSteps - Navigating to https://supplysync.us/
+16:34:09 [main] INFO  step_definitions.CompaniesSteps - Logging in with valid credentials.
+16:34:09 [main] INFO  step_definitions.CompaniesSteps - Navigating to the Companies page.
+16:35:12 [main] INFO  step_definitions.CompaniesSteps - Navigating to https://supplysync.us/
+16:35:12 [main] INFO  step_definitions.CompaniesSteps - Logging in with valid credentials.
+16:35:13 [main] INFO  step_definitions.CompaniesSteps - Navigating to the Companies page.
+16:35:58 [main] INFO  step_definitions.CompaniesSteps - Navigating to https://supplysync.us/
+16:35:59 [main] INFO  step_definitions.CompaniesSteps - Logging in with valid credentials.
+16:36:00 [main] INFO  step_definitions.CompaniesSteps - Navigating to the Companies page.
+16:36:30 [main] INFO  step_definitions.CompaniesSteps - Navigating to https://supplysync.us/
+16:36:30 [main] INFO  step_definitions.CompaniesSteps - Logging in with valid credentials.
+16:43:44 [main] INFO  step_definitions.CompaniesSteps - Navigating to https://supplysync.us/
+16:43:46 [main] INFO  step_definitions.CompaniesSteps - Logging in with valid credentials.
+16:43:46 [main] INFO  step_definitions.CompaniesSteps - Navigating to the Companies page.
+13:06:46 [main] INFO  pages.CompaniesPage - user going to urlhttps://supplysync.us/login
+13:06:46 [main] INFO  pages.CompaniesPage - user logging in the page
+13:06:47 [main] INFO  pages.CompaniesPage - user create company on the page
+13:06:47 [main] INFO  pages.CompaniesPage - user providing the company nameAisi
+13:11:37 [main] INFO  pages.CompaniesPage -  user going to url https://supplysync.us/login
+13:11:37 [main] INFO  pages.CompaniesPage -  user logging in the page 
+13:11:38 [main] INFO  pages.CompaniesPage -  user create company on the page 
+13:11:38 [main] INFO  pages.CompaniesPage -  user providing the company name Aisi
+13:11:38 [main] INFO  pages.CompaniesPage -  user filling the email field Ais@gmail.com
+13:11:38 [main] INFO  pages.CompaniesPage -  user filling the address field address
+13:11:38 [main] INFO  pages.CompaniesPage - already created a new company
+13:11:38 [main] INFO  pages.CompaniesPage - Phone number is required
+18:02:53 [main] INFO  pages.CompaniesPage -  user going to url https://supplysync.us/login
+18:02:55 [main] INFO  pages.CompaniesPage -  user logging in the page 
+18:02:56 [main] INFO  pages.CompaniesPage -  user create company on the page 
+18:02:56 [main] INFO  pages.CompaniesPage -  user providing the company name Ais
+18:02:56 [main] INFO  pages.CompaniesPage -  user filling the email field Ais@gmail.com
+18:02:56 [main] INFO  pages.CompaniesPage -  user filling the address field address
+18:02:56 [main] INFO  pages.CompaniesPage -  user filling phone field 1231231312
+18:02:56 [main] INFO  pages.CompaniesPage - already created a new company
+18:02:56 [main] INFO  pages.CompaniesPage - Company name must be at least 4 characters
