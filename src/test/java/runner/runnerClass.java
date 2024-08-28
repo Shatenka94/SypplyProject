@@ -8,9 +8,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/cucumberReport.html", "json:target/testReport.json"},
-        features = "src/test/resources/features",
+        features = "/Users/oles/Desktop/java/TariffAPI/src/test/resources",
         glue = "steps",
-        tags = "@login",
+        tags = "@tarifftest",
         dryRun = false
 )
 

@@ -1,20 +1,15 @@
+Feature: Creating tariff
+  As an API consumer
+  I want to create a tariff using the API
+  So that I can manage tariffs in the system
 
-Feature: login to supplysync
-  @login
-  Scenario: Login to supplysync and verify you logged in
-    When user is on login page
-    And user enters correct login
-    And user enters correct password
-    And user clicks login
-    Then verify that user is logged in
+  Background:
+    Given supplySync base URL
+    And I provide a VALID authorization token
 
-    @getalltariffs
-    Scenario: get all tariffs and verify they are displayed
-      When user is on login page
-      And user enters correct login
-      And user enters correct password
-      And user clicks login
-      Then verify that user is logged in
-      Then user clicks on tariff
-      Then user gets all tariffs via API
-      Then user create new tariff and verify it was created
+  @tarifftest
+  Scenario: Successfully create a tariff
+    When I send a POST request to create a tariff with the following details
+    Then the response status code should be 200
+    And the response should contain the name "Oles Tariff"
+    And the response should contain an id field

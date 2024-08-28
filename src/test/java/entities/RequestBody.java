@@ -1,21 +1,14 @@
 package entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class RequestBody {
     private String name;
     private String time;
     private String coordinates;
-//"name": "string",
-//        "time": "string",
-//
-//
-//        "coordinates": "string",
-//        "additionalInformation": "string",
-//        "type": "CITY",
-//        "regionId": 1,
-//        "branchId": 1
 
     private int price;
     private boolean map;
