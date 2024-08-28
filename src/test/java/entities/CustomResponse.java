@@ -30,4 +30,10 @@ public class CustomResponse {
     private int status;
 
     private String region;
+
+    private String password;
+
+    private String createdAt;
+    List<CustomResponse> company;
+
 }

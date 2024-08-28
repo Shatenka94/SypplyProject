@@ -24,5 +24,13 @@ public class RequestBody {
     private String seller_name;
     private String address;
     private String number;
+    private String logo;
+
+    private String phoneNumber;
+
+    private int id;
+
+
+
 
 }
