@@ -11,6 +11,10 @@ public class RequestBody {
     private String phoneNumber;
     private String password;
     private int id;
+    private String region;
+    private int regionId;
+    private int companyId;
+
 
 
 

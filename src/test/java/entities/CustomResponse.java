@@ -3,6 +3,7 @@ package entities;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
+import javax.swing.plaf.synth.Region;
 import java.util.List;
 
 
@@ -21,6 +22,8 @@ public class CustomResponse {
     private String status;
     private String createdAt;
     List<CustomResponse> company;
+    private int regionId;
+    private int companyId;
 
 
 
