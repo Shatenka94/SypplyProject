@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16fccad7-226c-4ed7-a096-d35231941a7f" name="Changes" comment="" />
+    <list default="true" id="16fccad7-226c-4ed7-a096-d35231941a7f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "olesm88"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Shatenka94/SypplyProject.git",
+    "accountId": "02f43603-af64-46db-a7e2-cf3c403edebb"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -41,6 +55,7 @@
     "Cucumber Java.Scenario: Login to saucedemo and verify you logged in.executor": "Run",
     "Cucumber Java.Scenario: Login to supplysync and verify you logged in.executor": "Run",
     "Cucumber Java.Scenario: Successfully create a company.executor": "Run",
+    "Cucumber Java.Scenario: Successfully create a tariff (1).executor": "Run",
     "Cucumber Java.Scenario: Successfully create a tariff.executor": "Run",
     "Cucumber Java.Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided.executor": "Run",
     "Cucumber Java.Scenario: create new tariff and verify its displayed.executor": "Run",
@@ -69,7 +84,7 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Successfully create a tariff">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Successfully create a tariff (1)">
     <configuration name="Scenario: Create company successfully and then delete" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Company.feature" />
@@ -90,15 +105,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Successfully create a company" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Successfully create a tariff (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/tariff.feature" />
       <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="TariffAPI" />
-      <option name="NAME_FILTER" value="^Successfully create a company$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Successfully create a company$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Successfully create a company" />
+      <module name="API" />
+      <option name="NAME_FILTER" value="^Successfully create a tariff$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Successfully create a tariff$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Successfully create a tariff" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -166,20 +181,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Successfully create a tariff (1)" />
         <item itemvalue="Cucumber Java.Scenario: Successfully create a tariff" />
         <item itemvalue="Cucumber Java.Scenario: Create company successfully and then delete" />
         <item itemvalue="Cucumber Java.Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided" />
         <item itemvalue="JUnit.test.login" />
-        <item itemvalue="Cucumber Java.Scenario: Successfully create a company" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-corretto-21.0.2-f644763e9732-d6553c93" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
