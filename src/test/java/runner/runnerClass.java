@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumberReport.html", "json:target/testReport.json"},
         features = "/Users/oles/Desktop/java/TariffAPI/src/test/resources",
         glue = "steps",
-        tags = "@tarifftest",
+        tags = "@getAlltariffs",
         dryRun = false
 )
 

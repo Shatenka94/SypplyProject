@@ -11,6 +11,8 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import runner.runnerClass;
 import utilities.Config;
@@ -19,8 +21,6 @@ import utilities.SupplySyncToken;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 public class tariffSteps {
     private RequestSpecification request;
@@ -31,17 +31,19 @@ public class tariffSteps {
     private CustomResponse customResponse;
     private Response response1;
     private Response response2;
-    String id;
+    private  static Logger logger = LogManager.getLogger(tariffSteps.class);
 
 
     @Given("supplySync base URL")
     public void supply_sync_base_url() {
         request = RestAssured.given().baseUri(baseUrl);
+        logger.info("Base url is given");
     }
 
     @Given("I provide a VALID authorization token")
     public void i_provide_valid_authorization_token() {
         request.auth().oauth2(token).contentType(ContentType.JSON);
+        logger.info("VALID authorization token is given");
     }
 
 
@@ -67,7 +69,7 @@ public class tariffSteps {
         response = request.body(requestBody).post("/api/v1/tariffs");
 //        System.out.println(response.prettyPrint());
         //     customResponse = mapper.readValue(response.asString(), CustomResponse.class);
-
+        logger.info("I send a POST request to create a tariff with the following details");
     }
 
     @Then("the response status code should be {int}")
@@ -75,6 +77,8 @@ public class tariffSteps {
         int status = response.statusCode();
         System.out.println(status);
         Assert.assertEquals(status, response.getStatusCode());
+        logger.info("the response status code should be");
+
     }
 
 
@@ -82,6 +86,7 @@ public class tariffSteps {
     public void the_response_should_contain_the_name(String name) {
         String expectedname = response.jsonPath().getString("name");
         Assert.assertEquals(name, expectedname);
+        logger.info("the response should contain the name");
     }
 
 
@@ -89,19 +94,20 @@ public class tariffSteps {
     public void the_response_should_contain_an_id_field() {
         int id = response.jsonPath().getInt("id");
         Assert.assertNotNull("ID field should not be null", id);
+        logger.info("the response should contain an id field");
     }
 
     @Given("I hit GET endpoint {string}")
     public void i_hit_get_endpoint(String endpoint) throws JsonProcessingException {
         response1 = RestAssured.given().auth().oauth2(token).get(baseUrl + endpoint);
-
+        logger.info("I hit GET endpoint");
     }
 
     @Then("Verify status code is {int}")
     public void verify_status_code_is(Integer int1) {
         Assert.assertEquals(200, response1.getStatusCode());
-        response1.prettyPrint();
-
+     //   response1.prettyPrint();
+        logger.info("user Verify status code");
     }
 
     @Then("Verify response body contains a list of tariffs")
@@ -118,21 +124,24 @@ public class tariffSteps {
 //        }
 //
 //       Assert.assertTrue(isThere);
+        logger.info("Verify response body contains a list of tariffs");
     }
-
 
 
     @Given("I hit DELETE endpoint {string} with id {string}")
     public void i_hit_delete_endpoint_with_id(String endpoint3, String id2) {
-        response = RestAssured.given().auth().oauth2(token).delete(baseUrl + endpoint3+id2);
+        response = RestAssured.given().auth().oauth2(token).delete(baseUrl + endpoint3 + id2);
+        logger.info("I hit DELETE endpoint ");
 
 
     }
+
     @Then("Verify response body doesnt contains that tariffs id {string}")
     public void verify_response_body_doesnt_contains_that_tariffs_id(String id2) {
-     response = RestAssured.given().auth().oauth2(token).get(baseUrl+"/api/v1/tariffs/" +id2);
-       int resultcode=response.getStatusCode();
-Assert.assertEquals(400,resultcode);
+        response = RestAssured.given().auth().oauth2(token).get(baseUrl + "/api/v1/tariffs/" + id2);
+        int resultcode = response.getStatusCode();
+        Assert.assertEquals(400, resultcode);
+        logger.info("Verify response body doesnt contains that tariffs id  ");
 
     }
 
