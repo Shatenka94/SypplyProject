@@ -18,17 +18,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoginPage;
 import utilities.Config;
 import utilities.Driver;
+import utilities.SupplySyncToken;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class test {
     private RequestSpecification request;
-    private String Url = Config.getProperty("supplysyncApiUrl");
+    private String Url = Config.getProperty("supplySyncAPIURL");
+    private String token = SupplySyncToken.getToken();
+    private final String baseUrl = Config.getProperty("supplySyncAPIURL");
     @Test
     public void login(){
 
+       Response response = RestAssured.given().auth().oauth2(token).delete(baseUrl + "/api/v1/tariffs/140");
+
         request = RestAssured.given().baseUri(Url);
         System.out.println(Url);
+        System.out.println(response.getStatusCode());
     }
 }

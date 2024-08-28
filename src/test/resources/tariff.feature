@@ -21,4 +21,12 @@ Feature: Creating tariff
     And I provide a VALID authorization token
     And I hit GET endpoint "/api/v1/tariffs"
     Then Verify status code is 200
-    And Verify response body contains a list of companies
+    And Verify response body contains a list of tariffs
+
+  @deletetariffs
+
+  Scenario: Verify delete specific tariff with id provided
+    Given supplySync base URL
+    And I provide a VALID authorization token
+    And I hit DELETE endpoint "/api/v1/tariffs/" with id "140"
+    And Verify response body doesnt contains that tariffs id "140"

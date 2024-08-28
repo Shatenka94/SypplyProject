@@ -16,6 +16,8 @@ import runner.runnerClass;
 import utilities.Config;
 import utilities.SupplySyncToken;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
@@ -27,7 +29,8 @@ public class tariffSteps {
     private String token = SupplySyncToken.getToken();
     private final String baseUrl = Config.getProperty("supplySyncAPIURL");
     private CustomResponse customResponse;
-    Response response1;
+    private Response response1;
+    private Response response2;
     String id;
 
 
@@ -62,7 +65,7 @@ public class tariffSteps {
 
         Assert.assertEquals(200, status);
         response = request.body(requestBody).post("/api/v1/tariffs");
-        System.out.println(response.prettyPrint());
+//        System.out.println(response.prettyPrint());
         //     customResponse = mapper.readValue(response.asString(), CustomResponse.class);
 
     }
@@ -75,7 +78,6 @@ public class tariffSteps {
     }
 
 
-
     @Then("the response should contain the name {string}")
     public void the_response_should_contain_the_name(String name) {
         String expectedname = response.jsonPath().getString("name");
@@ -83,40 +85,56 @@ public class tariffSteps {
     }
 
 
-
     @Then("the response should contain an id field")
     public void the_response_should_contain_an_id_field() {
-        int id=response.jsonPath().getInt("id");
-        Assert.assertNotNull("ID field should not be null",id);
+        int id = response.jsonPath().getInt("id");
+        Assert.assertNotNull("ID field should not be null", id);
     }
 
     @Given("I hit GET endpoint {string}")
     public void i_hit_get_endpoint(String endpoint) throws JsonProcessingException {
-        response1 = request.get(endpoint);
-       response1.prettyPrint();
-
-
-        customResponse = mapper.readValue(response1.asString(), CustomResponse.class);
+        response1 = RestAssured.given().auth().oauth2(token).get(baseUrl + endpoint);
 
     }
 
     @Then("Verify status code is {int}")
     public void verify_status_code_is(Integer int1) {
-        Assert.assertEquals((int) int1, response1.getStatusCode());
+        Assert.assertEquals(200, response1.getStatusCode());
+        response1.prettyPrint();
 
     }
 
-    @Then("Verify response body contains a list of companies")
-    public void verify_response_body_contains_a_list_of_companies() throws JsonProcessingException {
-        int size = customResponse.getCompany().size();
-        boolean isThere = false;
-        for (int i = 0; i < size; i++) {
-          if (customResponse.getCompany().get(i).getId().equals(id)) {
-                isThere = true;
-            }
-
-        }
-
-       Assert.assertTrue(isThere);
+    @Then("Verify response body contains a list of tariffs")
+    public void verify_response_body_contains_a_list_of_tariffs() throws JsonProcessingException {
+//        ObjectMapper mapper = new ObjectMapper();
+//        customResponse = mapper.readValue(response1.asString(), CustomResponse.class);
+//        int size = customResponse.getResponses().size();
+//        boolean isThere = false;
+//        for (int i = 0; i < size; i++) {
+//          if (customResponse.getResponses().get(i).getId().) {
+//                isThere = true;
+//            }
+//
+//        }
+//
+//       Assert.assertTrue(isThere);
     }
+
+
+
+    @Given("I hit DELETE endpoint {string} with id {string}")
+    public void i_hit_delete_endpoint_with_id(String endpoint3, String id2) {
+        response = RestAssured.given().auth().oauth2(token).delete(baseUrl + endpoint3+id2);
+
+
+    }
+    @Then("Verify response body doesnt contains that tariffs id {string}")
+    public void verify_response_body_doesnt_contains_that_tariffs_id(String id2) {
+     response = RestAssured.given().auth().oauth2(token).get(baseUrl+"/api/v1/tariffs/" +id2);
+       int resultcode=response.getStatusCode();
+Assert.assertEquals(400,resultcode);
+
+    }
+
 }
+

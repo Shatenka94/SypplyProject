@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="16fccad7-226c-4ed7-a096-d35231941a7f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entities/CustomResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entities/CustomResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/tariffSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/tariffSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/tariff.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/tariff.feature" afterDir="false" />
     </list>
@@ -62,6 +64,7 @@
     "Cucumber Java.Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided.executor": "Run",
     "Cucumber Java.Scenario: Verify GET all tariffs endpoint returns a list of tariffs when a valid token is provided.executor": "Run",
     "Cucumber Java.Scenario: Verify GET all tariffs returns a list of tariffs when a valid token is provided.executor": "Run",
+    "Cucumber Java.Scenario: Verify delete specific tariff with id provided.executor": "Run",
     "Cucumber Java.Scenario: create new tariff and verify its displayed.executor": "Run",
     "Cucumber Java.Scenario: create new tariff, get all and verify it was created.executor": "Run",
     "Cucumber Java.Scenario: get all tariffs and verify they are displayed.executor": "Run",
@@ -88,47 +91,7 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Verify GET all tariffs returns a list of tariffs when a valid token is provided">
-    <configuration name="Scenario: Create company successfully and then delete" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Company.feature" />
-      <option name="GLUE" value="steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="TariffAPI" />
-      <option name="NAME_FILTER" value="^Create company successfully and then delete$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create company successfully and then delete$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Create company successfully and then delete" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Successfully create a tariff (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/tariff.feature" />
-      <option name="GLUE" value="steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="API" />
-      <option name="NAME_FILTER" value="^Successfully create a tariff$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Successfully create a tariff$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Successfully create a tariff" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Verify delete specific tariff with id provided">
     <configuration name="Scenario: Successfully create a tariff" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/tariff.feature" />
@@ -188,13 +151,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Verify delete specific tariff with id provided" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/tariff.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TariffAPI" />
+      <option name="NAME_FILTER" value="^Verify delete specific tariff with id provided$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify delete specific tariff with id provided$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify delete specific tariff with id provided" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TariffAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.test" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Verify delete specific tariff with id provided" />
+        <item itemvalue="JUnit.test.login" />
         <item itemvalue="Cucumber Java.Scenario: Verify GET all tariffs returns a list of tariffs when a valid token is provided" />
         <item itemvalue="Cucumber Java.Scenario: Verify GET all tariffs endpoint returns a list of tariffs when a valid token is provided" />
         <item itemvalue="Cucumber Java.Scenario: Successfully create a tariff" />
-        <item itemvalue="Cucumber Java.Scenario: Successfully create a tariff (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Create company successfully and then delete" />
       </list>
     </recent_temporary>
   </component>

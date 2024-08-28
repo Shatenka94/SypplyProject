@@ -11,7 +11,7 @@ import java.util.List;
 public class CustomResponse {
     private int category_id;
     private String category_title;
-    List<entities.CustomResponse> responses;
+    List<CustomResponse> responses;
     private String email;
     private int seller_id;
     private int id;
@@ -35,5 +35,24 @@ public class CustomResponse {
 
     private String createdAt;
     List<CustomResponse> company;
+    List<CustomResponse> tariff;
+    private String time;
+    private String coordinates;
+
+    private int price;
+    private boolean map;
+
+
+    private int branchId;
+    private String additionalInformation;
+    private String type;
+
+
+
+    private String company_name;
+    private String seller_name;
+
+    private String number;
+
 
 }
