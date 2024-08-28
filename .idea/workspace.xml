@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16fccad7-226c-4ed7-a096-d35231941a7f" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2kyQCFKlwzbKY3AGmEQquqDKliZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: tariff.executor": "Run",
+    "Cucumber Java.Scenario: Create company successfully and then delete.executor": "Run",
+    "Cucumber Java.Scenario: Login to saucedemo and verify you logged in.executor": "Run",
+    "Cucumber Java.Scenario: Login to supplysync and verify you logged in.executor": "Run",
+    "Cucumber Java.Scenario: Successfully create a company.executor": "Run",
+    "Cucumber Java.Scenario: Successfully create a tariff.executor": "Run",
+    "Cucumber Java.Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided.executor": "Run",
+    "Cucumber Java.Scenario: create new tariff and verify its displayed.executor": "Run",
+    "Cucumber Java.Scenario: create new tariff, get all and verify it was created.executor": "Run",
+    "Cucumber Java.Scenario: get all tariffs and verify they are displayed.executor": "Run",
+    "JUnit.runnerClass.executor": "Run",
+    "JUnit.test.login.executor": "Run",
+    "JUnit.test.testToken.executor": "Run",
+    "JUnit.test.user_create_new_tariff_and_verify_it_was_created.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "tariffapi",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/oles/Desktop/java/TariffAPI",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/java/steps" />
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Successfully create a tariff">
+    <configuration name="Scenario: Create company successfully and then delete" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Company.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TariffAPI" />
+      <option name="NAME_FILTER" value="^Create company successfully and then delete$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create company successfully and then delete$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create company successfully and then delete" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Successfully create a company" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/tariff.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TariffAPI" />
+      <option name="NAME_FILTER" value="^Successfully create a company$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Successfully create a company$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Successfully create a company" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Successfully create a tariff" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/tariff.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TariffAPI" />
+      <option name="NAME_FILTER" value="^Successfully create a tariff$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Successfully create a tariff$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Successfully create a tariff" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Company.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TariffAPI" />
+      <option name="NAME_FILTER" value="^Verify GET all companies endpoint returns a list of companies when a valid token is provided$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify GET all companies endpoint returns a list of companies when a valid token is provided$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TariffAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.test" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Successfully create a tariff" />
+        <item itemvalue="Cucumber Java.Scenario: Create company successfully and then delete" />
+        <item itemvalue="Cucumber Java.Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided" />
+        <item itemvalue="JUnit.test.login" />
+        <item itemvalue="Cucumber Java.Scenario: Successfully create a company" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-corretto-21.0.2-f644763e9732-d6553c93" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16fccad7-226c-4ed7-a096-d35231941a7f" name="Changes" comment="" />
+      <created>1724253207077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724253207077</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
