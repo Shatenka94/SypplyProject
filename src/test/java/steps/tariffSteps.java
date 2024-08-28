@@ -12,10 +12,13 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
+import runner.runnerClass;
 import utilities.Config;
 import utilities.SupplySyncToken;
 
 import java.util.Map;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class tariffSteps {
     private RequestSpecification request;
@@ -24,6 +27,9 @@ public class tariffSteps {
     private String token = SupplySyncToken.getToken();
     private final String baseUrl = Config.getProperty("supplySyncAPIURL");
     private CustomResponse customResponse;
+    Response response1;
+    String id;
+
 
     @Given("supplySync base URL")
     public void supply_sync_base_url() {
@@ -68,15 +74,49 @@ public class tariffSteps {
         Assert.assertEquals(status, response.getStatusCode());
     }
 
+
+
     @Then("the response should contain the name {string}")
     public void the_response_should_contain_the_name(String name) {
         String expectedname = response.jsonPath().getString("name");
         Assert.assertEquals(name, expectedname);
     }
 
+
+
     @Then("the response should contain an id field")
     public void the_response_should_contain_an_id_field() {
         int id=response.jsonPath().getInt("id");
         Assert.assertNotNull("ID field should not be null",id);
+    }
+
+    @Given("I hit GET endpoint {string}")
+    public void i_hit_get_endpoint(String endpoint) throws JsonProcessingException {
+        response1 = request.get(endpoint);
+       response1.prettyPrint();
+
+
+        customResponse = mapper.readValue(response1.asString(), CustomResponse.class);
+
+    }
+
+    @Then("Verify status code is {int}")
+    public void verify_status_code_is(Integer int1) {
+        Assert.assertEquals((int) int1, response1.getStatusCode());
+
+    }
+
+    @Then("Verify response body contains a list of companies")
+    public void verify_response_body_contains_a_list_of_companies() throws JsonProcessingException {
+        int size = customResponse.getCompany().size();
+        boolean isThere = false;
+        for (int i = 0; i < size; i++) {
+          if (customResponse.getCompany().get(i).getId().equals(id)) {
+                isThere = true;
+            }
+
+        }
+
+       Assert.assertTrue(isThere);
     }
 }

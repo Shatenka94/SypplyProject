@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16fccad7-226c-4ed7-a096-d35231941a7f" name="Changes" comment="" />
+    <list default="true" id="16fccad7-226c-4ed7-a096-d35231941a7f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/tariffSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/tariffSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/tariff.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/tariff.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,34 +50,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: tariff.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Create company successfully and then delete.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Login to saucedemo and verify you logged in.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Login to supplysync and verify you logged in.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Successfully create a company.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Successfully create a tariff (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Successfully create a tariff.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: create new tariff and verify its displayed.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: create new tariff, get all and verify it was created.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: get all tariffs and verify they are displayed.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.runnerClass.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test.login.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test.testToken.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test.user_create_new_tariff_and_verify_it_was_created.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;tariffapi&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/oles/Desktop/java/TariffAPI&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: tariff.executor": "Run",
+    "Cucumber Java.Scenario: Create company successfully and then delete.executor": "Run",
+    "Cucumber Java.Scenario: Login to saucedemo and verify you logged in.executor": "Run",
+    "Cucumber Java.Scenario: Login to supplysync and verify you logged in.executor": "Run",
+    "Cucumber Java.Scenario: Successfully create a company.executor": "Run",
+    "Cucumber Java.Scenario: Successfully create a tariff (1).executor": "Run",
+    "Cucumber Java.Scenario: Successfully create a tariff.executor": "Run",
+    "Cucumber Java.Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided.executor": "Run",
+    "Cucumber Java.Scenario: Verify GET all tariffs endpoint returns a list of tariffs when a valid token is provided.executor": "Run",
+    "Cucumber Java.Scenario: Verify GET all tariffs returns a list of tariffs when a valid token is provided.executor": "Run",
+    "Cucumber Java.Scenario: create new tariff and verify its displayed.executor": "Run",
+    "Cucumber Java.Scenario: create new tariff, get all and verify it was created.executor": "Run",
+    "Cucumber Java.Scenario: get all tariffs and verify they are displayed.executor": "Run",
+    "JUnit.runnerClass.executor": "Run",
+    "JUnit.test.login.executor": "Run",
+    "JUnit.test.testToken.executor": "Run",
+    "JUnit.test.user_create_new_tariff_and_verify_it_was_created.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "tariffapi",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/oles/Desktop/java/TariffAPI",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
@@ -82,7 +88,7 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Successfully create a tariff (1)">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Verify GET all tariffs returns a list of tariffs when a valid token is provided">
     <configuration name="Scenario: Create company successfully and then delete" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Company.feature" />
@@ -142,14 +148,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify GET all tariffs endpoint returns a list of tariffs when a valid token is provided" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Company.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/tariff.feature" />
+      <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="TariffAPI" />
-      <option name="NAME_FILTER" value="^Verify GET all companies endpoint returns a list of companies when a valid token is provided$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify GET all companies endpoint returns a list of companies when a valid token is provided$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided" />
+      <option name="NAME_FILTER" value="^Verify GET all tariffs endpoint returns a list of tariffs when a valid token is provided$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify GET all tariffs endpoint returns a list of tariffs when a valid token is provided$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify GET all tariffs endpoint returns a list of tariffs when a valid token is provided" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -161,29 +168,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify GET all tariffs returns a list of tariffs when a valid token is provided" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/tariff.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="TariffAPI" />
+      <option name="NAME_FILTER" value="^Verify GET all tariffs returns a list of tariffs when a valid token is provided$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify GET all tariffs returns a list of tariffs when a valid token is provided$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify GET all tariffs returns a list of tariffs when a valid token is provided" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.test" />
-      <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Successfully create a tariff (1)" />
+        <item itemvalue="Cucumber Java.Scenario: Verify GET all tariffs returns a list of tariffs when a valid token is provided" />
+        <item itemvalue="Cucumber Java.Scenario: Verify GET all tariffs endpoint returns a list of tariffs when a valid token is provided" />
         <item itemvalue="Cucumber Java.Scenario: Successfully create a tariff" />
+        <item itemvalue="Cucumber Java.Scenario: Successfully create a tariff (1)" />
         <item itemvalue="Cucumber Java.Scenario: Create company successfully and then delete" />
-        <item itemvalue="Cucumber Java.Scenario: Verify GET all companies endpoint returns a list of companies when a valid token is provided" />
-        <item itemvalue="JUnit.test.login" />
       </list>
     </recent_temporary>
   </component>
